@@ -1,0 +1,130 @@
+﻿<!-- 
+///////////////////////////////////////////////////////////////////////
+// Window2.xaml - Second Window with more controls                   //
+//                                                                   //
+// Jim Fawcett, CSE681 - Software Modeling and Analysis, Summer 2009 //
+///////////////////////////////////////////////////////////////////////
+-->
+<Window x:Class="WpfApplication3.Window3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window3" Height="600" Width="720"
+    WindowStartupLocation="Manual" 
+    Left="50" Top="500">
+    <Window.Resources>
+        <Style x:Key="DemoStyle" TargetType="Button">
+            <Setter Property="Padding" Value="10,4" />
+            <Setter Property="Background" Value="Lightblue" />
+            <Setter Property="Foreground" Value="Maroon" />
+            <Setter Property="FontFamily" Value="Tahoma" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+        <Style x:Key="DemoStackPanelStyle" TargetType="StackPanel">
+    
+            <Setter Property="Background" Value="Darkblue" />
+
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <TabControl  Name="tabControl1" TabStripPlacement="Top" FontFamily="Tahoma" FontWeight="Bold" FontSize="18">
+            <TabItem Header="Tab 1" Name="tabItem1">
+                <StackPanel Orientation="Vertical">
+                    <Button Style="{StaticResource DemoStyle}" Content="Button1" Name="button1" Width="300" Height="150" Click="button1_Click"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Style="{StaticResource DemoStyle}" Content="Button2" Width="150" Height="50" />
+                        <Button Style="{StaticResource DemoStyle}" Content="Button3" />
+                    </StackPanel>
+                    <Button Style="{StaticResource DemoStyle}" Content="Button4" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Tab 2" Name="tabItem2">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Orientation="Horizontal" Height="60"></StackPanel>
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Background="Beige" Orientation="Horizontal" Height="400"></StackPanel>
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Orientation="Horizontal" Height="60"></StackPanel>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Tab 3" Name="tabItem3">
+                <StackPanel Orientation="Vertical">               
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Orientation="Horizontal" Height="60"></StackPanel>
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Background="Beige" Orientation="Horizontal" Height="400">
+                        <ListBox Name = "listbox" Width="350" SelectionMode="Extended">
+                            <ListBoxItem Content = "XAML Tutorials" MouseDown="ListItem_Click" />
+                            <ListBoxItem Content = "WPF Tutorials" />
+                            <ListBoxItem Content = "Silverlight Tutorials" />
+                            <ListBoxItem Content = "Windows 10 Tutorials" />
+                            <ListBoxItem Content = "iOS Tutorials" />
+                        </ListBox>
+                        <StackPanel Orientation="Vertical">
+                            <TextBox Height = "300" x:Name = "textBox1" Width="300" Text="Helloasdfffffffffffffffffffffffffffffffffffffffffffffffffffffffff" TextWrapping="Wrap" />
+                        </StackPanel>
+
+                    </StackPanel>
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Orientation="Horizontal" Height="60"></StackPanel>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Tab 4" Name="tabItem4">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Orientation="Horizontal" Height="60"></StackPanel>
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Background="Beige" Orientation="Horizontal" Height="400">
+
+                        <ListBox  Name="LeftListBox">
+                            <ListBoxItem Content = "Silverlight Tutorials" />
+                            <ListBoxItem Content = "Windows 10 Tutorials" />
+                            <ListBoxItem Content = "iOS Tutorials" />
+                            <ListBoxItem Content = "Silverlight Tutorials" />
+                            <ListBoxItem Content = "Windows 10 Tutorials" />
+                            <ListBoxItem Content = "iOS Tutorials" />
+                            <ListBoxItem Content = "Silverlight Tutorials" />
+                            <ListBoxItem Content = "Windows 10 Tutorials" />
+                            <ListBoxItem Content = "iOS Tutorials" />
+                            <ListBoxItem Content = "Silverlight Tutorials" />
+                            <ListBoxItem Content = "Windows 10 Tutorials" />
+                            <ListBoxItem Content = "Silverlight Tutorials" />
+                            <ListBoxItem Name="item13" Content = "xyz" />
+
+                        </ListBox>
+                        
+                        <Button Name="AddButton" Height="23" Click="AddButton_Click">Add &gt;&gt;</Button>
+
+                     
+
+                        <ListBox Name="RightListBox"  Width="216">
+                            <ListBoxItem Content = "Windows 10 Tutorials" />
+                            <ListBoxItem Content = "iOS Tutorials" />
+                        </ListBox>
+
+                    </StackPanel>
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Orientation="Horizontal" Height="60"></StackPanel>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Tab 5" Name="tabItem5">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Orientation="Horizontal" Height="60"></StackPanel>
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Background="Beige" Orientation="Horizontal" Height="400">
+                        <ListBox Name = "listbox5a" Width="350" SelectionMode="Single" MouseDoubleClick="listbox5a_MouseDoubleClick">
+
+                        </ListBox>
+                        <StackPanel Orientation="Vertical">
+                            <TextBox Height = "300" x:Name = "textBox5" Width="300" TextWrapping="Wrap" />
+                        </StackPanel>
+
+                    </StackPanel>
+                    <StackPanel Style="{StaticResource DemoStackPanelStyle}" Orientation="Horizontal" Height="60"></StackPanel>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Tab 6" Name="tabItem6">
+                <ScrollViewer>
+                    <Image Name="image4" Stretch="UniformToFill"  Source="ClassDiagram1.png" />
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
+
+
+

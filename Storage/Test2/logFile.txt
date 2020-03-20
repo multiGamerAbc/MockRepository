@@ -1,0 +1,67 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Thu Jun 14 08:40:32 2018
+     Path: "C:\su\CSE687-OnLine\Code\Project4Sample\Storage\Test2"
+     Args: *.h, *.cpp, /m, /r, /f
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      58
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                    Comm.h   namespace            MsgPassingCommunication      43      54      31
+                    Comm.h       class                           Receiver      48      13       6
+                    Comm.h       class                             Sender      66      16      17
+                    Comm.h       class                               Comm      84      13       7
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                  Comm.cpp    function                           Receiver      29       3       1
+                  Comm.cpp    function                              queue      35       3       1
+                  Comm.cpp    function                              start      42       3       1
+                  Comm.cpp    function                               stop      48       3       1
+                  Comm.cpp    function                         getMessage      54       4       1
+                  Comm.cpp    function                             Sender      61       3       1
+                  Comm.cpp    function                            ~Sender      67       4       1
+                  Comm.cpp    function                              start      74      42       9
+                  Comm.cpp    function                               void      75      37       8
+                  Comm.cpp    function                               stop     119       7       1
+                  Comm.cpp    function                            connect     129       4       1
+                  Comm.cpp    function                        postMessage     136       3       1
+                  Comm.cpp    function                           sendFile     144      21       2
+                  Comm.cpp    function                               Comm     275       2       1
+                  Comm.cpp    function                              start     279      15       1
+                  Comm.cpp    function                               stop     296       4       1
+                  Comm.cpp    function                        postMessage     302       3       1
+                  Comm.cpp    function                         getMessage     307       3       1
+                  Comm.cpp    function                               name     312       3       1
+                  Comm.cpp       class                      ClientHandler     171     104      14
+                  Comm.cpp    function                      ClientHandler     176       3       1
+                  Comm.cpp    function                     ~ClientHandler     181       4       1
+                  Comm.cpp    function                           setQueue     188       3       1
+                  Comm.cpp    function                            readMsg     194      11       2
+                  Comm.cpp    function                        receiveFile     212      31       4
+                  Comm.cpp    function                         operator()     246      24       4
+                  Comm.cpp    function                       DemoSndrRcvr     324      79       1
+                  Comm.cpp    function                      DemoCommClass     410      68       1
+                  Comm.cpp    function                    ThreadProcClnt1     485      28       2
+                  Comm.cpp    function                    ThreadProcClnt2     516      21       2
+                  Comm.cpp    function                   DemoClientServer     543      48       5
+                  Comm.cpp    function                               main     595      20       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                  Comm.cpp    function                       DemoSndrRcvr     324      79       1
+                  Comm.cpp    function                      DemoCommClass     410      68       1
+
+
+
+    searched     2 dirs
+   processed     2 files

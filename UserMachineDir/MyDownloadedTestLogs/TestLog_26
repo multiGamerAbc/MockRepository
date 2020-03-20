@@ -1,0 +1,29 @@
+---> Now processing Test Request from: 7001
+
+================================================================================
+=========================== Processing TestElement A ===========================
+================================================================================
+
+///////////////////////////////////////////// Processing TestedCodeElement 1 ///
+
+Interface:        Car
+Implementation:   CarImpl1
+
+Test:             tireTread()
+Returns:          0.031250
+Test Result:      0
+
+Test:             brakeRating()
+Returns:          95.000000
+Test Result:      1
+
+Test:             maxSpeed()
+Returns:          70
+Test Result:      0
+
+Subtest Results Vector:       0    1    0
+
+-----------------------------------// Test Result for testedCodeElement 1:  0 //
+--------------// Time-Date Stamp for testedCodeElement 1:   03/20/20 09:05:36 //
+--------------------------------------------------------------------------------
+

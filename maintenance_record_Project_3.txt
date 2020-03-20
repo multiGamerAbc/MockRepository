@@ -1,0 +1,213 @@
+Dear Reader,
+I have a new appreciation for maintenance records, but this one is not comprehensive.
+Indeed, there were many things done on many other days which are not recorded here.  
+And, further, I should applogize for not removing unnecessary entries.
+- Phil Maalouf
+
+Notes to Professer:
+Be sure to set multiple sartup projects, CommServer and CommUser.
+
+############ Not Sure Of Date  #########################################################################
+- merged in project 2 and CommWithFileXfer
+- broke
+- project2WithLoggerReplacedByMyLogger
+- mergedOldClientStuffIntoMsgPassingComm_Works
+- createdMsgPassingCommB_works
+- sentTestRequestFromCommAandPassedToHarnessInCommB
+- parsedTestRequestIntoStringsManuallyInCommC
+- sentIndividualDllRequestsBackToComm1
+- loadedTestDriverAndTestedCodeAndRanTestAtEP1
+- triedAddingToStringToBlockAndBroke
+- addedFileSystemToMsgPassingComms
+- modifedFilePathsAndBroke
+- sentDllFileThroughChannel
+- sentDllFileFromProjectToProject
+- sentDllFilesAndRanMathImpl1Test
+
+############ 6 / 9 / 18  #########################################################################
+- _CRT_SECURE_NO_WARNINGS
+- 
+############ 6 / 10 / 18  #########################################################################
+- added Wrapper (Non functionally)
+- added project 2 stuff
+- added Comm stuff and broke
+- copied from scratch6
+
+############ 6 / 13 / 18  #########################################################################
+
+- added string client server, no problems
+- added second string client server pair, no problems
+- trimmed down client
+
+############ 6 / 14 / 18  #########################################################################
+
+- modified spawn function
+- created testApp2
+- experimented with executable (in Debug, etc)
+- changed saveFilePath
+- added child Tested Project
+
+############ 6 / 15 / 18  #########################################################################
+
+- passed message from user through server to CTP
+- from work: modified TestElement
+- working
+- CTP posted ready message
+- sent test request to CTP from ready queue
+- found a bug using TestHarness in CTP
+- fixed, required altering paths in test request
+- modified dispatch2 and ctp function2 and passed msg to ctp
+- removed extractor lambda and replaced with function
+- minor rearangements to Comm Server Main, etc
+- added Queues, moved main, did a bunch of stuff
+- added blocking queues to comm server
+- passed messages to CTPs
+- renamed to 
+- CommServer and CommUser
+- broke
+
+############ 6 / 16 / 18  #########################################################################
+
+- rearranged some things and added comments about file Xfer approach
+- fixed sendFilePath in server, sent random text document
+- still working
+- added test requests to request set and sent user port in message
+- moved request set to user file manager
+
+############ 6 / 17 / 18  #########################################################################
+
+- building CTP file Xfer Request Function
+
+scratch64_b
+
+deleted StaticLogger stuff from main
+rearanged some more
+
+scratch64_c
+
+rearanged more.
+renamed a bunch of functions (wont build)
+
+scratch64_d
+
+rearanged more.
+used three startup projects, user, server, and CTP
+passed messages among all three processes, user, server, CTP
+added myCommDemo
+
+scratch64_e
+
+added sendNumMessagesToServer function to CommUser.cpp
+added extractor function to CommServer
+notes:
+there seems to be an issue with the extractor function.
+Or maybe it's the COMM.  There is inconsistent behavior.
+I think I will try creating a unique Comm for each EndPoint pair.
+Although, this doesn't seem right, since sometimes I get messages in
+the server from both user and CTP, and other times I don't.
+I'm wondering if there is a mutual exclusion necessity with these Comms.
+
+scratch64_f
+
+added new portNums, EPs, Comms, and extractor functions
+
+scratch64_g
+
+added communicationTest to User, Server, and CTP
+added ioMutex to each.
+sent 5 messages from each to each through dedicated Comms
+added contrivedExtractorDelays to each
+cleaned up / rearanged
+
+############ 6 / 18 / 18  #########################################################################
+
+scratch64_g
+
+spawned process
+modified (single CTP) port for comm with user
+
+scratch64_h
+
+tried to dynamically create Comms and EndPoints in CTP and broke.
+Will try with pointers
+
+scratch_i
+broke
+
+scratch_j
+moved basically everything into main in order to have access to Comms and
+EndPoints.  Couldn't seem to do it any other way.  Not what I had wanted to do.
+
+scratch64_k
+dynamically assigned port numbers in childTesterProcess using IDs passed to
+spawn() in server
+
+scratch64_l
+added a bunch of port numbers, EndPoints, and Comms to the server
+
+scratch64_m
+added same to user
+
+scratch64_n
+modified some message commands, modified some extractors to check these
+
+scratch64_o
+Same again.  Commented-out msg.show()
+
+scratch64_p
+put port number in all Message names.  Changed other printed info.
+
+scratch64_q
+sent TestRequests to Server, then to CTPs, switching on ready message name (port)
+
+############ 6 / 19 / 18  #######################################################################
+
+scratch64_r
+created sendNumMessagesToCtp_1B function.  sent msg to Ctp1.  extracted msg
+from testReauestBQ and attached it's command() to a new message msg2, and sent
+that to Ctp1 as well.
+
+scratch64_s
+abandoned
+
+scratch64_t
+Created matchTestRequestsToReadyCTPs() function.  This dispatches TRs to CTPs.
+
+scratch64_u
+Added doTest() function to CTP, 3 CTPs run tests.
+
+scratch64_v
+Modified CTP logic.
+
+scratch_w
+(A) CTP sends file requetsts and User returns file messages.
+
+-- abandon scratch64_x --
+
+p3b
+Added shared_mutex fileMutex to CommUser, only in ctp_1 specific code.
+
+p3c
+Succesfully synchronized sendfile directory access
+
+p3d
+cleanup
+
+p3f
+More cleanup
+
+p3g
+Modified the Message class to add timeDate() function.
+Added code to demonstrate all requirement #4 items (to do with Message)
+
+p3h
+Modifed printout in CommUser.
+
+p3i
+Cleanup, organized, added comments, sorted #includes, etc
+
+p3j
+Privatized requestVector in FileManager 
+Removed all copies of unneeded file dllmain.cpp 
+
+

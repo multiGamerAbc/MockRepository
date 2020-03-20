@@ -1,0 +1,54 @@
+﻿<!-- 
+///////////////////////////////////////////////////////////////////////
+// Window2.xaml - Second Window with more controls                   //
+//                                                                   //
+// Jim Fawcett, CSE681 - Software Modeling and Analysis, Summer 2009 //
+///////////////////////////////////////////////////////////////////////
+-->
+<Window x:Class="WpfApplication3.Window2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window2" Height="600" Width="720"
+    WindowStartupLocation="Manual" 
+    Left="50" Top="500">
+    <Grid>
+    <TabControl  Name="tabControl1" TabStripPlacement="Top" FontFamily="Tahoma" FontWeight="Bold" FontSize="18">
+      <TabItem Header="Show Image" Name="tabItem1">
+        <ScrollViewer>
+          <Image Name="image1" Stretch="UniformToFill"  Source="ClassDiagram1.png" />
+        </ScrollViewer>
+      </TabItem>
+      <TabItem Header="Control Binding" Name="tabItem2">
+        <Grid>
+          <StackPanel>
+          <Slider  Height="40" Margin="45,32,45,0" x:Name="slider1" VerticalAlignment="Top"
+                   TickFrequency="10" TickPlacement="Both"  Minimum="0" Maximum="100" />
+          <ProgressBar Margin="45, 10, 45, 10" Height="25" Name="progressBar1"
+                       Style="{DynamicResource SimpleProgressBar}" Value="{Binding Path=Value, ElementName=slider1}"
+                       ValueChanged="progressBar1_ValueChanged">
+            <ProgressBar.Background>
+              <LinearGradientBrush EndPoint="1,0" StartPoint="0,0">
+                <GradientStop Color="#FFBABABA" Offset="0"/>
+                <GradientStop Color="#FFC7C7C7" Offset="0.5"/>
+                <GradientStop Color="#FF5D9C1D" Offset="0.75"/>
+              </LinearGradientBrush>
+            </ProgressBar.Background>
+          </ProgressBar>
+          </StackPanel>
+        </Grid>
+      </TabItem>
+      <TabItem Header="Control Group" Name="tabItem3">
+        <Grid>
+          <GroupBox Header="Top Control Group" Margin="24,17,24,0" Name="groupBox1" Height="80" VerticalAlignment="Top">
+            <Grid>
+              <TextBlock Margin="21,0,123,0" Name="textBlock1" Height="30" FontSize="24"
+                         Background="Maroon" Foreground="White" TextAlignment="Center" />
+              <Button HorizontalAlignment="Right" Margin="0,10,0,10" Name="button1" Width="108"
+                      Click="button1_Click">Button</Button>
+            </Grid>
+          </GroupBox>
+        </Grid>
+      </TabItem>
+    </TabControl>
+  </Grid>
+</Window>

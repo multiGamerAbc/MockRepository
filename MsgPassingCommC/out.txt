@@ -1,0 +1,1 @@
+This will be redirected to file out.txt

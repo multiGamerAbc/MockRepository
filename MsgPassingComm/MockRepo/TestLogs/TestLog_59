@@ -1,0 +1,43 @@
+---> Now processing Test Request from: 7001
+
+================================================================================
+=========================== Processing TestElement A ===========================
+================================================================================
+
+///////////////////////////////////////////// Processing TestedCodeElement 1 ///
+
+Interface:        Logic
+Implementation:   LogicImpl3
+
+Test:             conj(0, 1)
+Returns:          0
+Test Result:      1
+
+Test:             conj(1, 1)
+Returns:          1
+Test Result:      1
+
+Test:             disj(0, 0)
+Returns:          0
+Test Result:      1
+
+Test:             disj(0, 1)
+Returns:          1
+Test Result:      1
+
+Test:             implies(0, 1)
+Returns:          1
+Test Result:      1
+
+Test:             implies(1, 0)
+Returns:          0
+Test Result:      1
+
+Subtest Results Vector:       1    1    1    1    1    1
+
+-----------------------------------// Test Result for testedCodeElement 1:  1 //
+--------------// Time-Date Stamp for testedCodeElement 1:   06/29/18 04:45:54 //
+--------------------------------------------------------------------------------
+
+Posting message
+Message Posted

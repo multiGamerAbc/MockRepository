@@ -1,0 +1,53 @@
+---> Now processing Test Request from: 7002
+
+================================================================================
+=========================== Processing TestElement A ===========================
+================================================================================
+
+///////////////////////////////////////////// Processing TestedCodeElement 1 ///
+
+Interface:        Car
+Implementation:   CarImpl1
+
+Test:             tireTread()
+Returns:          0.031250
+Test Result:      0
+
+Test:             brakeRating()
+Returns:          95.000000
+Test Result:      1
+
+Test:             maxSpeed()
+Returns:          70
+Test Result:      0
+
+Subtest Results Vector:       0    1    0
+
+-----------------------------------// Test Result for testedCodeElement 1:  0 //
+--------------// Time-Date Stamp for testedCodeElement 1:   03/20/20 07:40:51 //
+--------------------------------------------------------------------------------
+
+
+///////////////////////////////////////////// Processing TestedCodeElement 2 ///
+
+Interface:        Car
+Implementation:   CarImpl3
+
+Test:             tireTread()
+Returns:          0.093750
+Test Result:      1
+
+Test:             brakeRating()
+Returns:          100.000000
+Test Result:      1
+
+Test:             maxSpeed()
+Returns:          210
+Test Result:      1
+
+Subtest Results Vector:       1    1    1
+
+-----------------------------------// Test Result for testedCodeElement 2:  1 //
+--------------// Time-Date Stamp for testedCodeElement 2:   03/20/20 07:40:51 //
+--------------------------------------------------------------------------------
+

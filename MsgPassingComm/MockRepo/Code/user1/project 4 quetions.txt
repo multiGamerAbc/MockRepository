@@ -1,0 +1,2 @@
+Where's mixed classes?
+vid 7.6 he says array is a managed type.  Where is it defined, how to find these?

@@ -1,0 +1,115 @@
+---> Now processing Test Request from: 7002
+
+================================================================================
+=========================== Processing TestElement A ===========================
+================================================================================
+
+///////////////////////////////////////////// Processing TestedCodeElement 1 ///
+
+Interface:        Logic
+Implementation:   LogicImpl1
+
+Test:             conj(0, 1)
+Returns:          0
+Test Result:      1
+
+Test:             conj(1, 1)
+Returns:          1
+Test Result:      1
+
+Test:             disj(0, 0)
+Returns:          1
+Test Result:      0
+
+Test:             disj(0, 1)
+Returns:          1
+Test Result:      1
+### LogicIimpl1
+
+Test:             implies(0, 1)
+Returns:          1
+Test Result:      1
+### LogicIimpl1
+
+Test:             implies(1, 0)
+Returns:          0
+Test Result:      1
+
+Subtest Results Vector:       1    1    0    1    1    1
+
+-----------------------------------// Test Result for testedCodeElement 1:  0 //
+--------------// Time-Date Stamp for testedCodeElement 1:   03/20/20 08:02:04 //
+--------------------------------------------------------------------------------
+
+
+///////////////////////////////////////////// Processing TestedCodeElement 2 ///
+
+Interface:        Logic
+Implementation:   LogicImpl2
+
+Test:             conj(0, 1)
+Returns:          0
+Test Result:      1
+
+Test:             conj(1, 1)
+Returns:          1
+Test Result:      1
+
+Test:             disj(0, 0)
+Returns:          0
+Test Result:      1
+
+Test:             disj(0, 1)
+Returns:          1
+Test Result:      1
+
+Test:             implies(0, 1)
+Returns:          0
+Test Result:      0
+
+Test:             implies(1, 0)
+Returns:          1
+Test Result:      0
+
+Subtest Results Vector:       1    1    1    1    0    0
+
+-----------------------------------// Test Result for testedCodeElement 2:  0 //
+--------------// Time-Date Stamp for testedCodeElement 2:   03/20/20 08:02:04 //
+--------------------------------------------------------------------------------
+
+
+///////////////////////////////////////////// Processing TestedCodeElement 3 ///
+
+Interface:        Logic
+Implementation:   LogicImpl3
+
+Test:             conj(0, 1)
+Returns:          0
+Test Result:      1
+
+Test:             conj(1, 1)
+Returns:          1
+Test Result:      1
+
+Test:             disj(0, 0)
+Returns:          0
+Test Result:      1
+
+Test:             disj(0, 1)
+Returns:          1
+Test Result:      1
+
+Test:             implies(0, 1)
+Returns:          1
+Test Result:      1
+
+Test:             implies(1, 0)
+Returns:          0
+Test Result:      1
+
+Subtest Results Vector:       1    1    1    1    1    1
+
+-----------------------------------// Test Result for testedCodeElement 3:  1 //
+--------------// Time-Date Stamp for testedCodeElement 3:   03/20/20 08:02:04 //
+--------------------------------------------------------------------------------
+

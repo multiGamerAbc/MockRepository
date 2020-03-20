@@ -1,0 +1,77 @@
+---> Now processing Test Request from: 7001
+
+================================================================================
+=========================== Processing TestElement A ===========================
+================================================================================
+
+///////////////////////////////////////////// Processing TestedCodeElement 1 ///
+
+Interface:        Math
+Implementation:   MathImpl1
+
+Test:             add(99,-100)
+Returns:          -1
+Test Result:      1
+
+Test:             add(16,9)
+Returns:          25
+Test Result:      1
+
+Test:             subtract(99,-100)
+Returns:          199
+Test Result:      1
+
+Test:             subtract(16,9)
+Returns:          7
+Test Result:      1
+
+Test:             multiply(99,-100)
+Returns:          0
+Test Result:      0
+
+Test:             multiply(16,9)
+Returns:          128
+Test Result:      0
+
+Subtest Results Vector:       1    1    1    1    0    0
+
+-----------------------------------// Test Result for testedCodeElement 1:  0 //
+--------------// Time-Date Stamp for testedCodeElement 1:   06/30/18 05:48:13 //
+--------------------------------------------------------------------------------
+
+
+///////////////////////////////////////////// Processing TestedCodeElement 2 ///
+
+Interface:        Math
+Implementation:   MathImpl2
+
+Test:             add(99,-100)
+Returns:          -1
+Test Result:      1
+
+Test:             add(16,9)
+Returns:          25
+Test Result:      1
+
+Test:             subtract(99,-100)
+Returns:          199
+Test Result:      1
+
+Test:             subtract(16,9)
+Returns:          7
+Test Result:      1
+
+Test:             multiply(99,-100)
+Returns:          -9900
+Test Result:      1
+
+Test:             multiply(16,9)
+Returns:          144
+Test Result:      1
+
+Subtest Results Vector:       1    1    1    1    1    1
+
+-----------------------------------// Test Result for testedCodeElement 2:  1 //
+--------------// Time-Date Stamp for testedCodeElement 2:   06/30/18 05:48:13 //
+--------------------------------------------------------------------------------
+
