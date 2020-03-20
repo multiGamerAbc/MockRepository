@@ -2,6 +2,8 @@
 
 A mock source code repository.
 
+Video demonstration: https://youtu.be/dtZPXou68wU
+
 To The User:
 - Please be sure to set multiple startup projects, CommServer, CommUser, and GUI and run with VisualStudio.
 
