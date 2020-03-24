@@ -1,6 +1,6 @@
 # MockRepository
 
-A mock source code repository.
+A mock source code repository.  Final Project for Object Oriented Design course.
 
 Video demonstration: https://youtu.be/dtZPXou68wU
 
