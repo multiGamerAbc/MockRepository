@@ -4,6 +4,8 @@ A mock source code repository.  Final Project for Object Oriented Design course.
 
 Video demonstration: https://youtu.be/dtZPXou68wU
 
+This is a mock source code repository.  It was the final project for Object Oriented Design course.  It supports logging in with user credentials, creating new user credentials as an administrator, testing source code implementations of C++ interfaces, choosing from files in the mock repository to create test requests and sending these, uploading and downloading source code and test result files, searching for files and directories in the mock repository, creating and navigating directories of the mock repository, etc.
+
 To The User:
 - Please be sure to set multiple startup projects, CommServer, CommUser, and GUI and run with VisualStudio.
 
